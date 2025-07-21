@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plans & Pricing - Pricing Plans</title>
+    <link rel="shortcut icon" href="../../imgs/check-list.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./plans.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <i class="fas fa-crown"></i>
+          <h1>Pricing Plans</h1>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+          <h2>Choose the Plan That Fits You</h2>
+          <p>Plans tailored for every need. Cancel anytime.</p>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="pricing-section">
+          <div class="pricing-grid">
+            <!-- Free Plan -->
+            <div class="pricing-card basic-plan">
+              <div class="plan-header">
+                <div class="plan-icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <h3 class="plan-name">Basic</h3>
+                <p class="plan-description">For personal use</p>
+              </div>
+              <div class="plan-pricing">
+                <div class="price-container">
+                  <span class="currency">$</span>
+                  <span class="price monthly-price">0</span>
+                  <span class="price yearly-price" style="display: none"
+                    >0</span
+                  >
+                  <span class="period">/mo</span>
+                </div>
+                <p class="price-note">Forever free</p>
+              </div>
+              <div class="plan-features">
+                <ul class="features-list">
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>5 projects</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>1 GB storage</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Basic support</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Community forum</span>
+                  </li>
+                  <li class="feature-item disabled">
+                    <i class="fas fa-times"></i>
+                    <span>Priority support</span>
+                  </li>
+                  <li class="feature-item disabled">
+                    <i class="fas fa-times"></i>
+                    <span>API access</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="plan-action">
+                <button
+                  class="plan-btn basic-btn"
+                  onclick="window.location.href = '../product/product.html'"
+                >
+                  <i class="fas fa-play"></i>
+                  Get Started
+                </button>
+              </div>
+            </div>
+
+            <!-- Pro Plan -->
+            <div class="pricing-card pro-plan popular">
+              <div class="popular-badge">
+                <i class="fas fa-star"></i>
+                Popular
+              </div>
+              <div class="plan-header">
+                <div class="plan-icon">
+                  <i class="fas fa-gem"></i>
+                </div>
+                <h3 class="plan-name">Professional</h3>
+                <p class="plan-description">For small teams</p>
+              </div>
+              <div class="plan-pricing">
+                <div class="price-container">
+                  <span class="currency">$</span>
+                  <span class="price monthly-price">29</span>
+                  <span class="price yearly-price" style="display: none"
+                    >23</span
+                  >
+                  <span class="period monthly-period">/mo</span>
+                  <span class="period yearly-period" style="display: none"
+                    >/mo</span
+                  >
+                </div>
+                <p class="price-note monthly-note">Monthly payment</p>
+                <p class="price-note yearly-note" style="display: none">
+                  Annual payment $276
+                </p>
+              </div>
+              <div class="plan-features">
+                <ul class="features-list">
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Unlimited projects</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>100 GB storage</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Priority support</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Team collaboration</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>API access</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Analytics & reports</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="plan-action">
+                <button
+                  class="plan-btn pro-btn"
+                  onclick="window.location.href = '../payment/payment.html'"
+                >
+                  <i class="fas fa-crown"></i>
+                  Go Pro
+                </button>
+              </div>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card enterprise-plan">
+              <div class="plan-header">
+                <div class="plan-icon">
+                  <i class="fas fa-building"></i>
+                </div>
+                <h3 class="plan-name">Enterprise</h3>
+                <p class="plan-description">For large organizations</p>
+              </div>
+              <div class="plan-pricing">
+                <div class="price-container">
+                  <span class="currency">$</span>
+                  <span class="price monthly-price">99</span>
+                  <span class="price yearly-price" style="display: none"
+                    >79</span
+                  >
+                  <span class="period monthly-period">/mo</span>
+                  <span class="period yearly-period" style="display: none"
+                    >/mo</span
+                  >
+                </div>
+                <p class="price-note monthly-note">Monthly payment</p>
+                <p class="price-note yearly-note" style="display: none">
+                  Annual payment $948
+                </p>
+              </div>
+              <div class="plan-features">
+                <ul class="features-list">
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>All Pro features</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Unlimited storage</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>24/7 support</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Dedicated manager</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>SSO integration</span>
+                  </li>
+                  <li class="feature-item">
+                    <i class="fas fa-check"></i>
+                    <span>Custom settings</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="plan-action">
+                <button class="plan-btn enterprise-btn" onclick="eneterprisePlan()">
+                  <i class="fas fa-handshake"></i>
+                  Contact Us
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Features Comparison -->
+        <section class="comparison-section">
+          <div class="section-header">
+            <h3>Features Comparison</h3>
+            <p>See all plans and their features in detail</p>
+          </div>
+
+          <div class="comparison-table-container">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th class="feature-column">Features</th>
+                  <th class="plan-column">Basic</th>
+                  <th class="plan-column popular-column">Professional</th>
+                  <th class="plan-column">Enterprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="feature-name">Number of projects</td>
+                  <td class="feature-value">5</td>
+                  <td class="feature-value">Unlimited</td>
+                  <td class="feature-value">Unlimited</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">Storage size</td>
+                  <td class="feature-value">1 GB</td>
+                  <td class="feature-value">100 GB</td>
+                  <td class="feature-value">Unlimited</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">Team members</td>
+                  <td class="feature-value">1 person</td>
+                  <td class="feature-value">10 people</td>
+                  <td class="feature-value">Unlimited</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">API requests</td>
+                  <td class="feature-value">
+                    <i class="fas fa-times text-danger"></i>
+                  </td>
+                  <td class="feature-value">10,000/mo</td>
+                  <td class="feature-value">Unlimited</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">Priority support</td>
+                  <td class="feature-value">
+                    <i class="fas fa-times text-danger"></i>
+                  </td>
+                  <td class="feature-value">
+                    <i class="fas fa-check text-success"></i>
+                  </td>
+                  <td class="feature-value">
+                    <i class="fas fa-check text-success"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="feature-name">Analytics</td>
+                  <td class="feature-value">Basic</td>
+                  <td class="feature-value">Advanced</td>
+                  <td class="feature-value">Full</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">SSO</td>
+                  <td class="feature-value">
+                    <i class="fas fa-times text-danger"></i>
+                  </td>
+                  <td class="feature-value">
+                    <i class="fas fa-times text-danger"></i>
+                  </td>
+                  <td class="feature-value">
+                    <i class="fas fa-check text-success"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+          <div class="cta-content">
+            <h3>Still can't decide?</h3>
+            <p>Talk to our experts and find the best plan for you</p>
+            <div class="cta-actions">
+              <a class="cta-btn primary" href="tel:+9981234567">
+                <i class="fas fa-phone"></i>
+                Free consultation
+              </a>
+              
+              <button class="cta-btn secondary" onclick="window.open('https://www.youtube.com/', '_blank')  ">
+                <i class="fas fa-play"></i>
+                See Demo
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-bottom">
+          <p>&copy; 2025 Dekks Pricing Plans. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./plans.js"></script>
+  </body>
+</html>

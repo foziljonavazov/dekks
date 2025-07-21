@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download - Download Center</title>
+    <link rel="stylesheet" href="./product.css" />
+    <link rel="shortcut icon" href="../../imgs/box.webp" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="logo">
+          <i class="fas fa-download"></i>
+          <h1>Dekks Download Center</h1>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+          <h2>Download the Latest Version</h2>
+          <p>Available for all platforms. Fast, secure, and free download.</p>
+        </section>
+
+        <!-- Download Cards -->
+        <section class="downloads">
+          <div class="download-card" data-platform="windows">
+            <div class="card-header">
+              <i class="fab fa-windows"></i>
+              <div class="platform-info">
+                <h3>Windows</h3>
+                <span class="version">v2.1.0</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>Optimized for Windows 10/11</p>
+              <div class="file-info">
+                <span class="file-size">125 MB</span>
+                <span class="file-type">.exe</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button
+                class="download-btn"
+                data-file="app-windows.exe"
+                onclick="window.open('https://drive.google.com/file/d/1ZDa7HJZYpu4XSk3om9xAcH92qJ9qWdEf/view?usp=sharing', '_blank')"
+              >
+                <i class="fas fa-download"></i>
+                Download
+              </button>
+            </div>
+          </div>
+
+          <div class="download-card" data-platform="mac">
+            <div class="card-header">
+              <i class="fab fa-apple"></i>
+              <div class="platform-info">
+                <h3>macOS</h3>
+                <span class="version">v2.1.0</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>Compatible with macOS 10.15+</p>
+              <div class="file-info">
+                <span class="file-size">98 MB</span>
+                <span class="file-type">.dmg</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button
+                class="download-btn"
+                data-file="app-macos.dmg"
+                onclick="window.open('https://drive.google.com/file/d/1MMthBojiUoW4DPWgjm4BsNv8j-WhaSe6/view?usp=sharing', '_blank')"
+              >
+                <i class="fas fa-download"></i>
+                Download
+              </button>
+            </div>
+          </div>
+
+          <div class="download-card" data-platform="linux">
+            <div class="card-header">
+              <i class="fab fa-linux"></i>
+              <div class="platform-info">
+                <h3>Linux</h3>
+                <span class="version">v2.1.0</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>For Ubuntu, Debian, CentOS</p>
+              <div class="file-info">
+                <span class="file-size">87 MB</span>
+                <span class="file-type">.deb</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button
+                class="download-btn"
+                data-file="app-linux.deb"
+                onclick="window.open('https://drive.google.com/file/d/1sBn1vrIlgcuGT63FwR3HmcWc9Sy5DbKy/view?usp=sharing', '_blank')"
+              >
+                <i class="fas fa-download"></i>
+                Download
+              </button>
+            </div>
+          </div>
+
+          <div class="download-card" data-platform="mobile">
+            <div class="card-header">
+              <i class="fas fa-mobile-alt"></i>
+              <div class="platform-info">
+                <h3>Mobile</h3>
+                <span class="version">v1.8.5</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>For Android</p>
+              <div class="file-info">
+                <span class="file-size">45 MB</span>
+                <span class="file-type">.apk</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button
+                class="download-btn"
+                data-file="app-mobile.apk"
+                onclick="window.open('https://drive.google.com/file/d/12sZ_oezU3opFfCG7vl3zyuDlOE27D4lY/view?usp=sharing', '_blank')"
+              >
+                <i class="fas fa-download"></i>
+                Download
+              </button>
+            </div>
+          </div>
+          <div class="download-card" data-platform="mobile">
+            <div class="card-header">
+              <i class="fas fa-mobile-alt"></i>
+              <div class="platform-info">
+                <h3>Mobile</h3>
+                <span class="version">v1.9.3</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <p>For iOS</p>
+              <div class="file-info">
+                <span class="file-size">75 MB</span>
+                <span class="file-type">.ipa</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button
+                class="download-btn"
+                data-file="app-mobile.apk"
+                onclick="window.open('https://drive.google.com/file/d/1MhOw0zrdpl8OkJ1AQZfB0r6Cz5_r3TPj/view?usp=sharing', '_blank')"
+              >
+                <i class="fas fa-download"></i>
+                Download
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Additional Downloads -->
+        <section class="additional-downloads">
+          <h3>Additional Downloads</h3>
+          <div class="additional-grid">
+            <div class="additional-item">
+              <i class="fas fa-book"></i>
+              <div class="item-info">
+                <h4>User Manual</h4>
+                <span>PDF - 2.5 MB</span>
+              </div>
+              <button class="mini-download-btn" data-file="user-manual.pdf" onclick="window.open('https://drive.google.com/file/d/1qLJBaxtx9Joytuabh5ighknrkXhQnm1f/view?usp=sharing', '_blank')">
+                <i class="fas fa-download"></i>
+              </button>
+            </div>
+            <div class="additional-item">
+              <i class="fas fa-code"></i>
+              <div class="item-info">
+                <h4>API Documentation</h4>
+                <span>ZIP - 1.8 MB</span>
+              </div>
+              <button
+                class="mini-download-btn"
+                data-file="api-docs.zip"
+                onclick="window.open('https://drive.google.com/file/d/1nkCva-_omWasVxwyAi_-LlCk-eJppLn-/view?usp=sharing', '_blank')"
+              >
+                <i class="fas fa-download"></i>
+              </button>
+            </div>
+            <div class="additional-item">
+              <i class="fas fa-palette"></i>
+              <div class="item-info">
+                <h4>Themes Pack</h4>
+                <span>ZIP - 5.2 MB</span>
+              </div>
+              <button class="mini-download-btn" data-file="themes-pack.zip" onclick="window.open('https://drive.google.com/file/d/1LKIU9kmgHYDRaZmJKeU6fR_V5nvE65Zx/view?usp=sharing', '_blank')">
+                <i class="fas fa-download"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- System Requirements -->
+        <section class="system-requirements">
+          <h3>System Requirements</h3>
+          <div class="requirements-grid">
+            <div class="requirement-card">
+              <h4><i class="fab fa-windows"></i> Windows</h4>
+              <ul>
+                <li>Windows 10 or higher</li>
+                <li>4 GB RAM</li>
+                <li>500 MB free space</li>
+                <li>.NET Framework 4.8</li>
+              </ul>
+            </div>
+            <div class="requirement-card">
+              <h4><i class="fab fa-apple"></i> macOS</h4>
+              <ul>
+                <li>macOS 10.15 or higher</li>
+                <li>4 GB RAM</li>
+                <li>400 MB free space</li>
+                <li>Intel or Apple Silicon</li>
+              </ul>
+            </div>
+            <div class="requirement-card">
+              <h4><i class="fab fa-linux"></i> Linux</h4>
+              <ul>
+                <li>Ubuntu 18.04+ / Debian 10+</li>
+                <li>2 GB RAM</li>
+                <li>300 MB free space</li>
+                <li>GTK+ 3.0</li>
+              </ul>
+            </div>
+            <div class="requirement-card">
+              <h4><i class="fab fa-android"></i> Android</h4>
+              <ul>
+                <li>Android 14 (or higher)</li>
+                <li>1 GB RAM</li>
+                <li>200 MB free space</li>
+                <li>OpenGL ES 3.0 or higher</li>
+              </ul>
+            </div>
+            <div class="requirement-card">
+              <h4><i class="fab fa-apple"></i> iOS</h4>
+              <ul>
+                <li>iOS 15 or higher</li>
+                <li>2 GB RAM</li>
+                <li>250 MB free space</li>
+                <li>Metal support</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-bottom">
+          <p>&copy; 2025 Dekks Download Center. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

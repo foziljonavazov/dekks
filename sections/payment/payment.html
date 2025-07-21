@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" x-data="creditCard()" x-init="init()">
+<link rel="shortcut icon" href="../../imgs/wallet.webp" type="image/x-icon">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Form</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+          }
+        }
+      },
+      darkMode: 'media'
+    }
+  </script>
+
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Alpine.js -->
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <!-- Custom Styles -->
+ <link rel="stylesheet" href="./payment.css">
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 font-sans">
+
+  <div class="grid place-items-center w-screen h-screen p-4">
+    <form class="max-w-md w-full" autocomplete="off" @submit.prevent>
+      <div class="grid grid-cols-3 gap-6">
+        <!-- Card Number -->
+        <label for="cc" class="relative block w-full col-span-3">
+          <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Card number</span>
+          <p class="py-1 text-xs text-gray-600 dark:text-gray-400">Supported card types: American Express (starts with 34 or 47),  Discover (starts with 6011),  Mastercard (starts with 51-55), and Visa (starts with 4).</p>
+          <input type="text" id="cc" placeholder="XXXX XXXX XXXX XXXX" inputmode="numeric"
+            x-model="ccNum" x-bind:maxlength="ccLength" x-on:keyup="formatCreditCard()"
+            class="block w-full mt-2 px-3 py-2.5 text-base font-mono font-medium border rounded border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-50 focus:ring-1 focus:ring-[#1e90ff] dark:focus:ring-[#ffd700] focus:border-[#1e90ff] dark:focus:border-[#ffd700] shadow-inner hover:border-gray-500" />
+          <span class="absolute top-0 right-0 text-sm font-medium text-blue-600 dark:text-amber-300" x-text="ccType ? ccType.name : ''"></span>
+        </label>
+
+        <!-- Expiry Date -->
+        <label for="expiry" class="relative block w-full col-span-3 sm:col-span-2">
+          <span class="text-sm font-medium text-gray-700 dark:text-gray-200">Expiration date</span>
+          <p class="py-1 text-xs text-gray-600 dark:text-gray-400">Auto adds slash after month.</p>
+          <input type="text" id="expiry" maxlength="9" placeholder="MM / YYYY" inputmode="numeric"
+            x-model="expiry" x-on:keyup="formatExpiryInput($event)"
+            class="block w-full mt-2 px-3 py-2.5 text-base font-mono font-medium border rounded border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 focus:ring-1 focus:ring-[#1e90ff] dark:focus:ring-[#ffd700] focus:border-[#1e90ff] dark:focus:border-[#ffd700] shadow-inner hover:border-gray-500" />
+        </label>
+
+        <!-- CVV -->
+        <label for="cvv" class="relative block w-full col-span-3 sm:col-span-1">
+          <span class="text-sm font-medium text-gray-700 dark:text-gray-200">CVV</span>
+          <p class="py-1 text-xs text-gray-600 dark:text-gray-400">Usually 3 digits, 4 for Amex.</p>
+          <input type="text" id="cvv" placeholder="CVV" inputmode="numeric"
+            x-bind:maxlength="ccSecurity"
+            class="block w-full mt-2 px-3 py-2.5 text-base font-mono font-medium border rounded border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-200 focus:ring-1 focus:ring-[#1e90ff] dark:focus:ring-[#ffd700] focus:border-[#1e90ff] dark:focus:border-[#ffd700] shadow-inner hover:border-gray-500" />
+        </label>
+        <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition" @click="submitPayment">Submit Payment</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- creditCard() Alpine.js logic -->
+  <script src="./payment.js"></script>
+</body>
+</html>

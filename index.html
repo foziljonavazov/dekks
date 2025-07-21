@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Next Generation Project is a modern web application with a beautiful, intuitive interface based on a custom Figma design."
+    />
+    <meta
+      name="keywords"
+      content="Next Generation, Dekks, web app, modern UI, Figma design, responsive, dashboard, user profile, React, Next.js"
+    />
+    <meta name="author" content="Foziljon Avazov" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Next Generation Project" />
+    <meta
+      property="og:description"
+      content="A modern web application with a beautiful and intuitive interface."
+    />
+    <meta property="og:url" content="https://dekks-next-generation.netlify.app/" />
+    <meta property="og:image" content="https://dekks-next-generation.netlify.app/imgs/shapes.webp" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Next Generation Project" />
+    <meta
+      name="twitter:description"
+      content="A modern web application with a beautiful and intuitive interface."
+    />
+    <meta name="twitter:image" content="hhttps://dekks-next-generation.netlify.app/imgs/shapes.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Next Generation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./imgs/right-arrow.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Burger Menu -->
+      <div class="burger-menu" onclick="toggleMobileNav()">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav" id="mobileNav">
+        <a href="./sections/product/product.html" onclick="closeMobileNav()"
+          >Product</a
+        >
+        <a href="./sections/plans/plans.html" onclick="closeMobileNav()"
+          >Plans</a
+        >
+        <a href="#blog" onclick="closeMobileNav()">Blog</a>
+        <a href="#" onclick="closeMobileNav()">Get Updates</a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav>
+        <a href="./sections/product/product.html">Product</a>
+        <a href="./sections/plans/plans.html">Plans</a>
+        <a href="#blog">Blog</a>
+        <a href="#" id="uptadeLink">Get Updates</a>
+      </nav>
+
+      <div class="container">
+        <h5>Dekks <span data-animate="blink">coming soon</span></h5>
+        <h1>
+          Next <span class="fade-text" id="animated-text">Generation</span>
+        </h1>
+        <div class="input-field">
+          <input
+            type="email"
+            class="header-input"
+            placeholder="Enter your email..."
+          />
+          <button onclick="handleNotify()">Notify Me ✌️</button>
+        </div>
+        <p>
+          Be first on launch and updates.
+          <b
+            style="
+              font-family: Roboto;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 16.8px;
+              letter-spacing: 0%;
+              color: #8e8e98;
+            "
+            >GDPR</b
+          >
+          ready.
+        </p>
+        <span class="cookie" id="cookieNotice">
+          By continuing to use this site you consent with our cookie policy.
+        </span>
+      </div>
+      <img
+        src="./imgs/message.webp"
+        alt="message"
+        onclick="window.open('https://www.figma.com/design/dsKmRZE1d65z6fIeJaGMSu/Next-Generation?node-id=1-2&t=tPxjO2Y3Sj4lkPjo-0', '_blank')"
+      />
+    </header>
+    <main class="fade-in">
+      <img src="./imgs/shapes.webp" alt="shapes" />
+    </main>
+    <section class="description">
+      <div class="container">
+        <div>
+          <span class="typewriter">For creators, by creators </span>
+          <span data-animate="blink">👈</span>
+        </div>
+        <h3 class="typewriter">
+          The all-in-one presentation app for creative troops and solo forces.
+          Create, share and view ideas in an engaging and powerful new way. A
+          design driven deck engine, that speeds up and simplifies presentations
+          for everyone, with any content on any screen. Present hands-off,
+          remote or IRL.
+        </h3>
+        <p class="typewriter">
+          Dekks is coming this spring. Are you an enterprise with special
+          requirements?
+        </p>
+        <a
+          class="typewriter"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="anchor"
+          href="https://www.figma.com/design/dsKmRZE1d65z6fIeJaGMSu/Next-Generation?node-id=1-2&t=tPxjO2Y3Sj4lkPjo-0"
+          >Tell us how</a
+        >
+      </div>
+    </section>
+    <section class="cards fade-in">
+      <div class="container">
+        <div class="card">
+          <div class="card-title">
+            <h3>Design</h3>
+            <h2>Born to perform.</h2>
+            <h2>
+              Design intuitively and keep your brand identity in sync across
+              your workspace.
+            </h2>
+            <p>Share text styles, custom fonts, colors and brand assets.</p>
+          </div>
+          <div class="card-img" id="card-img">
+            <img src="./imgs/colored-shapes.webp" alt="colored-shapes" />
+            <img src="./imgs/fonts.webp" alt="fonts" />
+            <img src="./imgs/media.webp" alt="media" />
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h3>Content</h3>
+            <h2>Team focus.</h2>
+            <h2>
+              Kick-off ideas fast with reusable block injection and the smart
+              asset library.
+            </h2>
+            <p>
+              The smart asset library makes everything you create or add
+              reusable, even text and slides.
+            </p>
+          </div>
+          <div class="card-img" id="card-img-1">
+            <img src="./imgs/layout.webp" alt="layout" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <article>
+      <div class="container">
+        <h1 id="typing-text"></h1>
+      </div>
+    </article>
+    <section class="cards">
+      <div class="container" id="cards-container">
+        <div class="card fade-in">
+          <div class="card-title">
+            <h3>Management</h3>
+            <h2>Ultimate control.</h2>
+            <h2>
+              Manage your team, control access and analyse your decks in
+              real-time.
+            </h2>
+            <p>
+              Quickly gain insights and stay up to date with decks that are
+              shared outside of your company.
+            </p>
+          </div>
+          <div class="card-img" id="card-img">
+            <img src="./imgs/personal-card.webp" alt="personal-card" />
+            <img src="./imgs/12.5ps.webp" alt="12.5ps" />
+            <img src="./imgs/folder.webp" alt="folder" />
+          </div>
+        </div>
+        <div class="card fade-in">
+          <div class="card-title">
+            <h3>Experience</h3>
+            <h2>Stop clicking and start scrolling.</h2>
+            <h2>Made for any screen and any content with zero detours.</h2>
+            <p>
+              Present hands-off, remote or in person. No broken fonts, video
+              placeholders and missing assets.
+            </p>
+          </div>
+          <div class="card-img" id="card-img-1">
+            <img src="./imgs/responsive.webp" alt="responsive" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="features-section">
+      <div class="container">
+        <div class="header fade-in">
+          <h2 class="title">
+            Under the hood
+            <span data-animate="blink">⚡</span>
+          </h2>
+          <p class="subtitle">Made for speed and zero bottlenecks.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card" data-feature="identities">
+            <div class="feature-icon">
+              <img src="./imgs/identities.webp" alt="Identities icon" />
+            </div>
+            <h3 class="feature-title">Identities.</h3>
+            <p class="feature-description">
+              Keep your identity consistent and your resources in sync.
+            </p>
+          </div>
+
+          <div class="feature-card" data-feature="blocks">
+            <div class="feature-icon">
+              <img src="./imgs/home (1).webp" alt="Blocks icon" />
+            </div>
+            <h3 class="feature-title">Blocks.</h3>
+            <p class="feature-description">
+              Create and save custom slide layouts with easy drag & drop blocks.
+            </p>
+          </div>
+
+          <div class="feature-card" data-feature="layouts">
+            <div class="feature-icon">
+              <img src="./imgs/home (2).webp" alt="Layouts icon" />
+            </div>
+            <h3 class="feature-title">Layouts.</h3>
+            <p class="feature-description">
+              Design flexible layouts for any device and every screen.
+            </p>
+          </div>
+
+          <div class="feature-card" data-feature="controls">
+            <div class="feature-icon">
+              <img src="./imgs/home (3).webp" alt="Controls icon" />
+            </div>
+            <h3 class="feature-title">Controls.</h3>
+            <p class="feature-description">
+              Simply admin your team, workspace and integrations.
+            </p>
+          </div>
+
+          <div class="feature-card" data-feature="assets">
+            <div class="feature-icon">
+              <img src="./imgs/home (4).webp" alt="Assets icon" />
+            </div>
+            <h3 class="feature-title">Assets.</h3>
+            <p class="feature-description">
+              Use the smart asset library to manage your content with ease.
+            </p>
+          </div>
+
+          <div class="feature-card" data-feature="collaboration">
+            <div class="feature-icon">
+              <img src="./imgs/home (5).webp" alt="Collaboration icon" />
+            </div>
+            <h3 class="feature-title">Collaboration.</h3>
+            <p class="feature-description">
+              Edit with your team in real-time or invite view only guests.
+            </p>
+          </div>
+
+          <div class="feature-card" data-feature="merge">
+            <div class="feature-icon">
+              <img src="./imgs/home (6).webp" alt="Merge icon" />
+            </div>
+            <h3 class="feature-title">Merge.</h3>
+            <p class="feature-description">
+              Import your slides dynamically from other decks for rapid
+              creation.
+            </p>
+          </div>
+
+          <div class="feature-card" data-feature="insights">
+            <div class="feature-icon">
+              <img src="./imgs/home (7).webp" alt="Insights icon" />
+            </div>
+            <h3 class="feature-title">Insights.</h3>
+            <p class="feature-description">
+              Get real-time analytics about your presentation decks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog" id="blog">
+      <h1 class="fade-in">
+        Blog <span data-animate="blink">🎓</span>
+        <span class="blog-subtitle">What's new?</span>
+      </h1>
+
+      <div class="blog-cards">
+        <!-- Card 1: Logo and Menu -->
+        <div
+          class="blog-card blog-card-1 fade-in"
+          id="post-1"
+          onclick="window.location.href = 'https://www.figma.com/file/dsKmRZE1d65z6fIeJaGMSu/image/9a139720fa3b4525dca428b3375960d17916f690/download?fuid=1458401998069919741'"
+        >
+          <img src="./imgs/hand.webp" alt="hand" />
+        </div>
+
+        <!-- Card 2: NiLE Logo -->
+        <div class="blog-card blog-card-2 fade-in" id="post-2">
+          <a href="./imgs/nice.webp" download="nice.webp">
+            <img src="./imgs/nice.webp" alt="nice" />
+          </a>
+        </div>
+
+        <!-- Card 3: Indie Hackers -->
+        <div class="blog-card blog-card-3 fade-in" id="post-3">
+          <a href="./imgs/indie-hackers.webp" download="indie-hackers.webp">
+            <img src="./imgs/indie-hackers.webp" alt="indie-hackers" />
+          </a>
+        </div>
+        <div class="blog-card blog-card-4 fade-in" id="post-4">
+          <a
+            href="./imgs/Umbrella Elephant Logo.webp"
+            download="Umbrella Elephant Logo.webp"
+          >
+            <img src="./imgs/Umbrella Elephant Logo.webp" alt="Umbrella" />
+          </a>
+        </div>
+        <div class="blog-card blog-card-5 fade-in" id="post-5">
+          <a href="./imgs/Bike logo.webp" download="Bike logo.webp"
+            ><img src="./imgs/Bike logo.webp" alt="Bike"
+          /></a>
+        </div>
+        <div class="blog-card blog-card-6 fade-in" id="post-6">
+          <a
+            href="./imgs/Titan Trash Logo.webp"
+            download="Titan Trash Logo.webp"
+          >
+            <img src="./imgs/Titan Trash Logo.webp" alt="Titan"
+          /></a>
+        </div>
+      </div>
+
+      <button class="read-more-btn">Read all</button>
+      <button class="read-less-btn">Read less</button>
+    </section>
+
+    <footer class="footer-section" id="contact">
+      <div class="footer-content">
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+          <form class="newsletter-form">
+            <input type="email" class="newsletter-input" required />
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
+          <p class="gdpr-text">Get fresh new updates. GDPR ready.</p>
+        </div>
+
+        <!-- Decks Column -->
+        <div class="footer-column">
+          <h3>Decks</h3>
+          <ul class="footer-links">
+            <li><a href="./sections/product/product.html">Product</a></li>
+            <li><a href="./sections/plans/plans.html">Plans</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Column -->
+        <div class="footer-column">
+          <h3>Company</h3>
+          <ul class="footer-links">
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1esyupZDX5tMMnxPEWkbbs-MPqzSkmAB2/view?usp=sharing"
+                target="_blank"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1kadg7Gaf9e0lNK3nwijFSgcVnIfUoaD1/view?usp=sharing"
+                target="_blank"
+                >Press</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/19MvGJOGzO4MdYTk_haa_YmqnKWE2_9Sh/view?usp=sharing"
+                target="_blank"
+                >Jobs <span class="new-badge">New</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Legal Column -->
+        <div class="footer-column">
+          <h3>Legal</h3>
+          <ul class="footer-links">
+            <li>
+              <a
+                href="https://drive.google.com/file/d/17RHXwkJjZG3MWPsz2DB4FGHQSds4HjL8/view?usp=sharing"
+                target="_blank"
+                >Privacy</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1620-AujuKDj2ZXhB0hS1_M1dyq6hF4bg/view?usp=sharing"
+                target="_blank"
+                >Terms</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1ttIXrPW6cqNREfm8QWkM36YMbg11LkM9/view?usp=sharing"
+                target="_blank"
+              >
+                Cookies
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="scripts.js"></script>
+</html>
