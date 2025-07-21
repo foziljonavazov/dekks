@@ -1,6 +1,6 @@
 # Next Generation Project
 
-This project is built based on the [Figma design](https://www.figma.com/design/dsKmRZE1d65z6fIeJaGMSu/Next-Generation?node-id=1-2&t=tPxjO2Y3Sj4lkPjo-0) and aims to deliver a modern, user-friendly web application with an attractive and intuitive interface. [Live Demo]()
+This project is built based on the [Figma design](https://www.figma.com/design/dsKmRZE1d65z6fIeJaGMSu/Next-Generation?node-id=1-2&t=tPxjO2Y3Sj4lkPjo-0) and aims to deliver a modern, user-friendly web application with an attractive and intuitive interface. [Live Demo](https://dekks-next-generation.netlify.app/)
 
 ## Project Purpose
 
